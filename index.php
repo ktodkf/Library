@@ -23,6 +23,7 @@
         </div>
     </div>
     <img class="background" src="images/background.jpeg">    
+
     <h2 class="name_best">BESTSELLERS</h2>
     <div class="block_book_category">
         <div class="book_one">
@@ -36,5 +37,6 @@
         <div class="book_one">
         </div>
     </div>
+
 </body>
 </html>

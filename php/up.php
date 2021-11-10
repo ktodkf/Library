@@ -10,7 +10,7 @@
 		$login = $_POST['login'] ?? '';
 		$email = $_POST['email'] ?? '';
 		$password = $_POST['password'] ?? '';
-		
+
 		$check = true;
 		try {
 			// Подключение к базе данных
@@ -22,6 +22,7 @@
 			// Подготавливаем SQL-запрос
 			$query = $db->prepare("INSERT INTO $db_table (login, email, pass) values (:login, :email, :password)");
 			$query->execute($data);
+			echo ("Регистрация прошла успешно!");
 			
 		} catch (PDOException $e) {
 			// Если есть ошибка соединения или выполнения запроса, выводим её
@@ -30,6 +31,7 @@
 		}
 		
 		return ($check);
+
 	}
 	
 	function signIn()
@@ -71,5 +73,3 @@
 		return ($check);		
 	}	
 ?>
-
-$row = $query->fetchAll();

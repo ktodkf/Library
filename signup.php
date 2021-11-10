@@ -27,7 +27,9 @@
   
     <?php 
             include "php/up.php";
+            
             return signUp();
+
     ?>
 </div>
 
