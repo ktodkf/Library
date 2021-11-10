@@ -9,7 +9,7 @@
     <script src="js/index.js"></script>
     <script src="js/script.js"></script>   
 
-</head>ЧОРТвонючка
+</head>
 <body>
     <div id="navigation" name="navigation">
        <div class="logo">
