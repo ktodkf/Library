@@ -22,21 +22,42 @@
             <button class="list"><a href="signup.php" class="entry_link" >Войти</a></button>
         </div>
     </div>
-    <img class="background" src="images/background.jpeg">    
+    <img class="background" src="images/background.jpeg">
 
-    <h2 class="name_best">BESTSELLERS</h2>
-    <div class="block_book_category">
-        <div class="book_one">
-        </div>
-        <div class="book_one">
-        </div>
-        <div class="book_one">
-        </div>
-        <div class="book_one">
-        </div>
-        <div class="book_one">
+    <div> 
+        <div class="background_blue" >
+            <h2 class="name_best">Бестселлеры</h2>
+            <div class="block_book_category">
+                <div class="book_one">
+                </div>
+                <div class="book_one">
+                </div>
+                <div class="book_one">
+                </div>
+                <div class="book_one">
+                </div>
+                <div class="book_one">
+                </div>
+            </div>
+
+            <h2 class="name_best">В этом месяце</h2>
+            <h1 class="name_best">РЕКОМЕНДОВАННО</h1>
+            <div class="block_book_category">
+                <div class="book_one">
+                </div>
+                <div class="book_one">
+                </div>
+                <div class="book_one">
+                </div>
+                <div class="book_one">
+                </div>
+                <div class="book_one">
+                </div>
+            </div>
+
+            <h1 class="name_best"> Вы можете прочитать<br> историю о нас</h1>
+            <button>Читать</button>
         </div>
     </div>
-
 </body>
 </html>
