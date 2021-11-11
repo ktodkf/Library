@@ -1,4 +1,12 @@
 form 
 {
 	width: 500px;
+	text-align: center;
+    margin: auto;
+
+}
+
+.container
+{
+	text-align: center;
 }

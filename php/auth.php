@@ -13,7 +13,7 @@
 	$user = $result->fetch_assoc();
 
 	if(count((array)$user) == 0){
-		echo "Такой пользователь не найден";
+		echo "Такой пользователь не найден";		
 		exit();
 	} 
 
