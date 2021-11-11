@@ -9,7 +9,7 @@ body
 li
 {
     font: 19px/32px Georgia;
-    color: #333;
+    color: #0e345a;
     padding: 10px 20px 8px 45px;
     text-decoration: none;
     display: block;
@@ -48,7 +48,6 @@ li
 
 .block_book_category
 {
-    background-color: black ;
     width: 80%;
     height: 15vw;
     display: flex;
@@ -64,18 +63,49 @@ li
     background-color: red ;
     width: 8vw;
     height: 10vw;
+
 }
 
-.name_best
+.name_best 
 {
     text-align: center;
     font-size: 47px;
+    color: white;
+    font-family: Bradley Hand, cursive;
 }
 
+.name_best_one
+{
+    color: #0e345a;
+    text-align: center;
+    font-size: 47px;
+    font-family: Bradley Hand, cursive;
+}
 .background_blue
 {
-    background-color: blue;
-    height: 100vw;
+    background-color: #0e345a;
+    height: 70vw;
     width: 100%;
-    padding-top: -10vw;
+    margin-top: -65vw;
+}
+
+.button_read
+{
+    width: 12vw;
+    height: 3vw;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin-top: 2vw;
+    background-color: #0e345a;
+    border-color: white;
+    color:  white;
+    border-width: 3px;
+    font-family: Bradley Hand, cursive;
+}
+
+.button_read:hover
+{
+    background-color: white;
+    color:  #0e345a;
 }
