@@ -19,7 +19,7 @@
             <li class="list"><a href="#shop" class="shop"> Магазин</a></li>
             <li class="list"><a href="#about_us" class="about_us"> О нас</a> </li>
             <li class="list"><a href="#contact" class="contact"> Контакты</a> </li>
-            <button class="list"><a href="signup.php" class="entry_link" >Войти</a></button>
+            <button class="list_button"><a href="signup.php" class="entry_link" >Войти</a></button>
         </div>
     </div>
     <img class="background" src="images/background.jpeg">
@@ -58,5 +58,36 @@
         <button class="button_read">Читать</button>
     </div>
     <div class="background_blue" ></div>
+    <footer>
+        <div class="footer">
+            <div >
+                <p class="list_footer_name">Издательство "Книжный червь"</p>
+                <div>
+                    <li class="list_footer">Адрес: Республика Марий Эл,</li>
+                    <li class="list_footer">город Йошкар-Ола</li>
+                    <li class="list_footer">test@my.com</li>
+                    <li class="list_footer">12345678910</li>
+                </div>
+            </div>
+            <div>
+                <p class="list_footer_name">Магазин</p>
+                <div>
+                    <li class="list_footer">Часто задаваемые вопросы</li>
+                    <li class="list_footer">Обмен и возврат</li>
+                    <li class="list_footer">Способы оплаты</li>
+                    <li class="list_footer">Доставка</li>
+                </div>
+            </div>
+            <div>
+                <p class="list_footer_name">Социальные сети</p>
+                <div>
+                    <li class="list_footer">Facebook</li>
+                    <li class="list_footer">Twitter</li>
+                    <li class="list_footer">Instagram</li>
+                    <li class="list_footer">Pinterest</li>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

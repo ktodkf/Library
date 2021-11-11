@@ -6,9 +6,10 @@ body
     padding-left: 50px;
 }
 
-li
+.list
 {
-    font: 19px/32px Georgia;
+    font-size: 19px;
+    font-family: Bradley Hand, cursive;
     color: #0e345a;
     padding: 10px 20px 8px 45px;
     text-decoration: none;
@@ -16,8 +17,24 @@ li
     background-position: 21px;
     box-sizing: border-box;
     transition: 0.4s;
-    background-position-y: 17px;
-   
+    background-position-y: 17px; 
+}
+
+.list_button
+{
+    color:  #0e345a;
+    border-width: 3px;
+    font-family: Bradley Hand, cursive;
+    font-size: 19px;
+    margin-left: 2vw;
+    background-color: white;
+    cursor: pointer;
+}
+
+.list_button:hover
+{
+    background-color: #0e345a;
+    color: white;
 }
 
 #navigation
@@ -107,5 +124,28 @@ li
 .button_read:hover
 {
     background-color: white;
-    color:  #0e345a;
+    color: #0e345a;
+}
+
+.list_footer
+{
+    list-style-type: none;
+    color: #0e345a;
+    font-family: Bradley Hand, cursive;
+    font-size: 15px;
+    margin-bottom: 1vw;
+
+}
+
+.footer
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+.list_footer_name
+{
+    color: #0e345a;
+    font-family: Bradley Hand, cursive;
+    font-size: 17px;
+    margin-bottom: 2vw;
 }
