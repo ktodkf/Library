@@ -1,75 +1,26 @@
 <?php
-	function signUp()
-	{
-		$db_host = "localhost"; 
-		$db_user = "root"; // Логин БД
-		$db_password = ""; // Пароль БД
-		$db_base = 'library'; // Имя БД
-		$db_table = "users"; // Имя Таблицы БД
-		
-		$login = $_POST['login'] ?? '';
-		$email = $_POST['email'] ?? '';
-		$password = $_POST['password'] ?? '';
-
-		$check = true;
-		try {
-			// Подключение к базе данных
-			$db = new PDO("mysql:host=$db_host;dbname=$db_base", $db_user, $db_password);
-			// Устанавливаем корректную кодировку
-			$db->exec("set names utf8");
-			// Собираем данные для запроса
-			$data = array( 'login' => $login, 'email' => $email, 'password' => $password); 
-			// Подготавливаем SQL-запрос
-			$query = $db->prepare("INSERT INTO $db_table (login, email, pass) values (:login, :email, :password)");
-			$query->execute($data);
-			echo ("Регистрация прошла успешно!");
-			
-		} catch (PDOException $e) {
-			// Если есть ошибка соединения или выполнения запроса, выводим её
-			print "Ошибка!: " . $e->getMessage() . "<br/>";
-			$check = false;
-		}
-		
-		return ($check);
-
-	}
+	$login= filter_var(trim($_POST['login']), FILTER_SANITIZE_STRING);
+	$name= filter_var(trim($_POST['name']), FILTER_SANITIZE_STRING);
+	$pass= filter_var(trim($_POST['pass']), FILTER_SANITIZE_STRING);
 	
-	function signIn()
-	{
-		$db_host = "localhost"; 
-		$db_user = "root"; // Логин БД
-		$db_password = ""; // Пароль БД
-		$db_base = 'library'; // Имя БД
-		$db_table = "users"; // Имя Таблицы БД
-		
-		$login = $_POST['login'] ?? '';
-		$email = $_POST['email'] ?? '';
-		$password = $_POST['password'] ?? '';
-		
-		$check = true;
-		$passCheck = false;
-		$emailCheck = false;
-		$loginCheck = false;
-		try {
-			// Подключение к базе данных
-			$db = new PDO("mysql:host=$db_host;dbname=$db_base", $db_user, $db_password);
-			// Устанавливаем корректную кодировку
-			$db->exec("set names utf8");
-			// Собираем данные для запроса
-			$data = array( 'login' => $login, 'email' => $email, 'password' => $password); 
-			// Подготавливаем SQL-запрос
-			$query = $db->prepare("SELECT * FROM `users`");
-			$query->execute();
-			$i = 0;
-			$row = $query->fetchAll(PDO::FETCH_COLUMN, 0);
-			print_r ($row);
-			$test = $row(2);
-			echo $test;
-		} catch (PDOException $e) {
-			// Если есть ошибка соединения или выполнения запроса, выводим её
-			print "Ошибка!: " . $e->getMessage() . "<br/>";
-			$check = false;
-		}
-		return ($check);		
-	}	
+	if(mb_strlen($login) < 5 || mb_strlen($login) > 90) {
+		echo "Недопустимая длина логина";
+		exit();
+	} else if (mb_strlen($name) < 3 || mb_strlen($name) > 50) {
+		echo "Недопустимая длина имени";
+		exit();
+	} else if (mb_strlen($pass) < 2 || mb_strlen($pass) > 6) {
+		echo "Недопустимая длина пароля (от 2 до 6 символов)";
+		exit();
+	}
+
+	$pass= md5($pass."ghjkl12dsgfhd34");
+
+
+	$mysql = new mysqli('localhost', 'root', '', 'library');
+	$mysql->query("INSERT INTO `users` (`login`, `pass`, `name`) VALUES('$login', '$pass', '$name')");
+
+	$mysql->close();
+	header('Location: ../index.php');
+
 ?>
