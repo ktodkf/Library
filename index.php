@@ -17,10 +17,9 @@
        </div>
 
         <div style="display: flex;">
-            <li class="list"><a href="#shop" class="shop"> Магазин</a></li>
-            <li class="list"><a href="#about_us" class="about_us"> О нас</a> </li>
+            <li class="list"><a href="catalog.php" class="shop"> Магазин</a></li>
+            <li class="list"><a href="about_us.php" class="about_us"> О нас</a> </li>
             <li class="list"><a href="#contact" class="contact"> Контакты</a> </li>
-            <button class="list_button"><a href="php/up.php" class="entry_link" >Войти</a></button>
             <button class="list_button"><a href="signup.php" class="entry_link" >Регистрация</a></button>
         </div> 
         
