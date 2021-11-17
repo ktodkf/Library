@@ -21,4 +21,3 @@ INSERT INTO authors(name) VALUES ('Антуан де Сент-Экзюпери')
 
 
 INSERT INTO books(id_autors, id_ganre, title, cost, rating) VALUES (1, );
-
