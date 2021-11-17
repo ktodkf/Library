@@ -15,8 +15,8 @@
         <h1>Регистрация</h1>
         <p> Вы уже зарегестрированы в нашем магазине?  <a href="login/login.php">Авторизоваться</a></p>
         <form method="post" action="php/up.php">
+            <input type="text" class="form-control" name="email" id="email" placeholder="Введите почту"><br>
             <input type="text" class="form-control" name="login" id="login" placeholder="Введите логин"><br>
-            <input type="text" class="form-control" name="name" id="name" placeholder="Введите имя"><br>
             <input type="password" class="form-control" name="pass" id="pass" placeholder="Введите пароль"><br>
             <button class="btn btn-success" type="submit">Зарегистрироваться</button>
         </form>     

@@ -10,8 +10,8 @@ CREATE TABLE IF NOT EXISTS authors
 (
 id_authors INT PRIMARY KEY AUTO_INCREMENT,
 name VARCHAR(80) UNIQUE
-    
 );
+
 CREATE TABLE IF NOT EXISTS books_authors
 (
 id_book INT,

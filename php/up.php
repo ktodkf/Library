@@ -18,7 +18,7 @@
 
 
 	$mysql = new mysqli('localhost', 'root', '', 'library');
-	$mysql->query("INSERT INTO `users` (`login`, `pass`, `name`) VALUES('$login', '$pass', '$name')");
+	$mysql->query("INSERT INTO `users` (`email`, `login`, `pass`) VALUES('$email', '$login', '$pass')");
 
 	$mysql->close();
 	header('Location: ../index.php');
