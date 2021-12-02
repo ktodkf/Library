@@ -5,6 +5,7 @@
         <meta charset="UTF-8" />
         <title class="title">Книжный червь | Книжный онлайн-магазин</title>
         <link rel="stylesheet" type="text/css" href="style/style_main.css">
+        <link rel="stylesheet" type="text/css" href="style/style.css">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i&display=swap&subset=cyrillic-ext" rel="stylesheet">
         <script src="js/index.js"></script>
         <script src="js/script.js"></script>   
@@ -26,20 +27,14 @@
             <div class="filter">
                 <span>Фильтры</span>
                 <ul>
-                    <li>
-                        <button>
-                            <span>Коллекция</span>
-                            <span>-</span> 
-                            <div>
-                                <ul>
-                                    <li>Все книги</li>
-                                    <li>Историческая литература</li>
-                                    <li>Научная литреатура</li>
-                                    <li>Драмы</li>
-                                    <li>Приключения</li>
-                                </ul>
-                            </div>
-                        </button>
+                    <li>  
+                        <select>
+                            <option>Все книги</option>
+                            <option>Историческая литература</option>
+                            <option>Научная литреатура</option>
+                            <option>Драмы</option>
+                            <option>Приключения</option>
+                        </select>                        
                     </li>
                     <li>Цена</li>
                 </ul>   
