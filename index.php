@@ -39,24 +39,30 @@
                     {
                         ?>
                         <img class="book_one" src="books_image/<?php echo $result['image']; ?>.jpg">
+                        <p class="book_title"><?php echo $result['title']; ?></p>
                         <?php
                     }
                 ?>
             </div>
         </div>
-
+             
         <h2 class="name_best">В этом месяце</h2>
         <h1 class="name_best">РЕКОМЕНДОВАНО</h1>
         <div class="block_book_category">
-            <div class="book_one">
-            </div>
-            <div class="book_one">
-            </div>
-            <div class="book_one">
-            </div>
-            <div class="book_one">
-            </div>
-            <div class="book_one">
+            <?php
+                $link = mysqli_connect("localhost", "root", "", "library");
+                $images = mysqli_query($link, "SELECT * FROM `books` ORDER BY id_book DESC LIMIT 5");
+             ?>
+            <div class="book_one_block">
+                <?php 
+                    while ($result = mysqli_fetch_assoc($images))
+                    {
+                        ?>
+                        <img class="book_one" src="books_image/<?php echo $result['image']; ?>.jpg">
+                        <p class="book_title"><?php echo $result['title']; ?></p>
+                        <?php
+                    }
+                ?>
             </div>
         </div>
 
