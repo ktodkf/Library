@@ -24,42 +24,30 @@
 
         <div>
             <div class="filter">
-                
+                <span>Фильтры</span>
+                <ul>
+                    <li>
+                        <button>
+                            <span>Коллекция</span>
+                            <span>-</span> 
+                            <div>
+                                <ul>
+                                    <li>Все книги</li>
+                                    <li>Историческая литература</li>
+                                    <li>Научная литреатура</li>
+                                    <li>Драмы</li>
+                                    <li>Приключения</li>
+                                </ul>
+                            </div>
+                        </button>
+                    </li>
+                    <li>Цена</li>
+                </ul>   
             </div>
             <div class="catalog">
                 
             </div>
         </div>
-        <footer>
-        <div class="footer">
-            <div >
-                <p class="list_footer_name">Издательство "Книжный червь"</p>
-                <div>
-                    <li class="list_footer">Адрес: Республика Марий Эл,</li>
-                    <li class="list_footer">город Йошкар-Ола</li>
-                    <li class="list_footer">test@my.com</li>
-                    <li class="list_footer">12345678910</li>
-                </div>
-            </div>
-            <div>
-                <p class="list_footer_name">Магазин</p>
-                <div>
-                    <li class="list_footer">Часто задаваемые вопросы</li>
-                    <li class="list_footer">Обмен и возврат</li>
-                    <li class="list_footer">Способы оплаты</li>
-                    <li class="list_footer">Доставка</li>
-                </div>
-            </div>
-            <div>
-                <p class="list_footer_name">Социальные сети</p>
-                <div>
-                    <li class="list_footer">Facebook</li>
-                    <li class="list_footer">Twitter</li>
-                    <li class="list_footer">Instagram</li>
-                    <li class="list_footer">Pinterest</li>
-                </div>
-            </div>
-        </div>
-    </footer>
+        
     </body>
 </html>
