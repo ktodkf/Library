@@ -63,21 +63,25 @@ body
     height: 50px;
 }
 
+.book_one_block
+{
+    margin-top: -2vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
 .block_book_category
 {
     width: 80%;
     height: 15vw;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    
+ 
     padding: 1vw;
     margin: auto auto 5vw auto;
 }
 
 .book_one
 {
-    background-color: red ;
     width: 8vw;
     height: 10vw;
 
@@ -93,6 +97,7 @@ body
 
 .name_best_one
 {
+    margin-bottom:6vw;
     color: #0e345a;
     text-align: center;
     font-size: 47px;
@@ -141,6 +146,7 @@ body
 {
     display: flex;
     justify-content: space-evenly;
+    margin-top: 5vw;
 }
 .list_footer_name
 {

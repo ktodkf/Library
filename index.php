@@ -29,15 +29,19 @@
     <div> 
         <h2 class="name_best_one">Бестселлеры</h2>
         <div class="block_book_category">
-            <div class="book_one">
-            </div>
-            <div class="book_one">
-            </div>
-            <div class="book_one">
-            </div>
-            <div class="book_one">
-            </div>
-            <div class="book_one">
+            <?php
+                $link = mysqli_connect("localhost", "root", "", "library");
+                $images = mysqli_query($link, "SELECT * FROM `books` ORDER BY rating DESC LIMIT 5");
+             ?>
+            <div class="book_one_block">
+                <?php 
+                    while ($result = mysqli_fetch_assoc($images))
+                    {
+                        ?>
+                        <img class="book_one" src="books_image/<?php echo $result['image']; ?>.jpg">
+                        <?php
+                    }
+                ?>
             </div>
         </div>
 
