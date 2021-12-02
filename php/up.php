@@ -1,12 +1,12 @@
 <?php
+	$email= filter_var(trim($_POST['email']), FILTER_SANITIZE_STRING);
 	$login= filter_var(trim($_POST['login']), FILTER_SANITIZE_STRING);
-	$name= filter_var(trim($_POST['name']), FILTER_SANITIZE_STRING);
 	$pass= filter_var(trim($_POST['pass']), FILTER_SANITIZE_STRING);
 	
-	if(mb_strlen($login) < 5 || mb_strlen($login) > 90) {
-		echo "Недопустимая длина логина";
+	if(mb_strlen($email) < 5 || mb_strlen($email) > 90) {
+		echo "Недопустимая длина почты";
 		exit();
-	} else if (mb_strlen($name) < 3 || mb_strlen($name) > 50) {
+	} else if (mb_strlen($login) < 3 || mb_strlen($login) > 50) {
 		echo "Недопустимая длина имени";
 		exit();
 	} else if (mb_strlen($pass) < 2 || mb_strlen($pass) > 6) {
