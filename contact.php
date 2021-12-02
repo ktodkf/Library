@@ -18,17 +18,15 @@
            </div>
             <div style="display: flex;">
                 <li class="list"><a href="catalog.php" class="shop"> Магазин</a></li>
-                <li class="list"><a href="contact.php" class="contact"> Контакты</a> </li>
+                <li class="list"><a href="about_us.php" class="about_us"> О нас</a> </li>
                 <button class="list_button"><a href="signup.php" class="entry_link" >Регистрация</a></button>
             </div> 
         </div>
-
-        <h1 class="our_book">О нас</h1>
+        <h1 class="our_book">Наши контакты</h1>
         <div class="background_grey"></div>
-        <div><img class="girl_img" src="images/girl_read.jpg"></div>
-        <img src="images/book.jpg" class="book_img">
-        <footer>
-        <div class="footer">
+        <div class="background_white"></div>
+                <footer>
+        <div class="footer" id="footer_us">
             <div >
                 <p class="list_footer_name">Издательство "Книжный червь"</p>
                 <div>
@@ -57,6 +55,6 @@
                 </div>
             </div>
         </div>
-    </footer>    
+    </footer> 
     </body>
 </html>
