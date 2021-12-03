@@ -19,7 +19,7 @@
         <div style="display: flex;">
             <li class="list"><a href="catalog.php" class="shop"> Магазин</a></li>
             <li class="list"><a href="about_us.php" class="about_us"> О нас</a> </li>
-            <li class="list"><a href="#contact" class="contact"> Контакты</a> </li>
+            <li class="list"><a href="contact.php" class="contact"> Контакты</a> </li>
             <button class="list_button"><a href="signup.php" class="entry_link" >Регистрация</a></button>
         </div> 
         
@@ -38,16 +38,16 @@
                     while ($result = mysqli_fetch_assoc($images))
                     {
                         ?>
-                        <img class="book_one" src="books_image/<?php echo $result['image']; ?>.jpg">
-                        <p class="book_title"><?php echo $result['title']; ?></p>
+                        <div class="block_book"><img class="book_one" src="books_image/<?php echo $result['image']; ?>.jpg"><br>
+                        <p class="book_title"><?php echo $result['title']; ?></p></div>
                         <?php
                     }
                 ?>
             </div>
         </div>
              
-        <h2 class="name_best">В этом месяце</h2>
-        <h1 class="name_best">РЕКОМЕНДОВАНО</h1>
+        <h2 class="name_best_month">В этом месяце</h2>
+        <h1 class="name_best_rec">РЕКОМЕНДОВАНО</h1>
         <div class="block_book_category">
             <?php
                 $link = mysqli_connect("localhost", "root", "", "library");
@@ -58,16 +58,16 @@
                     while ($result = mysqli_fetch_assoc($images))
                     {
                         ?>
-                        <img class="book_one" src="books_image/<?php echo $result['image']; ?>.jpg">
-                        <p class="book_title"><?php echo $result['title']; ?></p>
+                        <div class="block_book"><img class="book_one" src="books_image/<?php echo $result['image']; ?>.jpg"><br>
+                        <p class="book_title"><?php echo $result['title']; ?></p></div>
                         <?php
                     }
                 ?>
             </div>
         </div>
 
-        <h1 class="name_best"> Вы можете прочитать<br> историю о нас</h1>
-        <button class="button_read">Читать</button>
+        <h1 class="name_best_month"> Вы можете прочитать<br> историю о нас</h1>
+        <button class="button_read"><a href="about_us.php">Читать</a></button>
     </div>
     <div class="background_blue" ></div>
     <footer>

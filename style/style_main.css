@@ -67,14 +67,12 @@ body
     margin-top: -2vw;
     display: flex;
     justify-content: space-around;
-    align-items: center;
 }
 
 .block_book_category
 {
     width: 80%;
     height: 15vw;
- 
     padding: 1vw;
     margin: auto auto 2vw auto;
 }
@@ -85,12 +83,27 @@ body
     height: 10vw;
 }
 
-.name_best 
+.name_best_month
 {
     text-align: center;
     font-size: 47px;
     color: white;
     font-family: Bradley Hand, cursive;
+    margin: 0 0 2vw 0;
+}
+
+.name_best_rec
+{
+    text-align: center;
+    font-size: 47px;
+    color: white;
+    font-family: Bradley Hand, cursive;   
+    margin: 0 0 5vw 0;
+}
+
+.block_book
+{
+    width: 15%;
 }
 
 .name_best_one
@@ -117,9 +130,8 @@ body
     left: 50%;
     transform: translate(-50%, 0);
     margin-top: 2vw;
-    background-color: #0e345a;
     border-color: white;
-    color:  white;
+    color:  #0e345a;
     border-width: 3px;
     font-family: Bradley Hand, cursive;
 }
@@ -152,4 +164,10 @@ body
     font-family: Bradley Hand, cursive;
     font-size: 17px;
     margin-bottom: 2vw;
+}
+
+.book_title
+{
+    font-family: Bradley Hand, cursive;
+    color: white;
 }
