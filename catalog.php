@@ -24,7 +24,19 @@
         </div>
         <h1 class="our_book">Наши книги</h1>
         <div class="book_story">
-            
+            <?php
+                $link = mysqli_connect("localhost", "root", "", "library");
+                $images = mysqli_query($link, "SELECT * FROM `books`");
+            ?>
+            <?php 
+                while ($result = mysqli_fetch_assoc($images))
+                {
+                    ?>
+                        <div class="block_book"><img class="book_one" src="books_image/<?php echo $result['image']; ?>.jpg"><br>
+                        <p class="book_title"><?php echo $result['title']; ?></p></div>
+                    <?php
+                }
+            ?>
             <div class="filter">
                 <span>Фильтры</span>  <br>
                 <select class="filter_book">
@@ -37,9 +49,10 @@
                 <br>
                 <span>Цена</span> 
                 <div>
-                    <input type="text" class="price" placeholder="50 рублей"><br>
-                    <input type="text" class="price" placeholder="5000 рублей"><br>   
+                    <input type="text" class="price" name="price_from" placeholder="50 рублей"><br>
+                    <input type="text" class="price" name="price_to" placeholder="5000 рублей"><br>   
                 </div>
+                <button class="apply"> Применить </button>
             </div>
             <div class="catalog">
                 <ul class="list_book">
