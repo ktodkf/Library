@@ -13,12 +13,14 @@ form
 
 .filter
 {
-	padding-top: 10vw;
+	padding-top: 5vw;
+	margin-right: 5vw;
 }
 
 .filter_book
 {
 	margin-bottom: 2vw;
+	width: 170px;
 }
 .price
 {
@@ -28,11 +30,12 @@ form
 .book_story
 {
 	display: flex;
+	flex-wrap: wrap;
 }
 
 h1
 {
-	padding-top: 10vw;
+	padding:5vw 0 3vw 0;
 	text-align: center;
 }
 
@@ -55,7 +58,7 @@ h1
 .our_book
 {
 	text-align: center;
-	font-size: 47px;
+	font-size: 55px;
 	color: #0e345a;
 	font-family: Bradley Hand, cursive;
 	position: relative;
@@ -86,11 +89,6 @@ h1
 	height: 30vw;
 }
 
-footer
-{
-	margin-top: 15vw;
-}
-
 #footer_us
 {
 	margin-top: 75vw;
@@ -105,4 +103,52 @@ footer
 	width: 60vw;
 	height: 50vw;
 	margin: 0 12vw 0 12vw;
+}
+
+.catalog_book
+{
+	display: flex;
+}
+
+.book_catalog {
+    width: 15vw;
+    height: 20vw;
+}
+
+.book_title_catalog {
+    font-family: Bradley Hand, cursive;
+    color: #0e345a;
+    font-size: 21px;
+}
+
+.block_book_catalog
+{
+	margin-right: 3vw;
+	margin-bottom: 5vw;
+	text-align: center;
+	width: 15vw;
+}
+
+#navigation_catalog, #navigation_us, #navigation_contact
+{
+    display: flex;
+    padding: 10px 50px 10px 50px;
+    height: 50px;
+    list-style-type: none;
+    justify-content: space-around;
+    width: 100%;
+    position: fixed;
+    background-color: white;
+    margin-top: -40px;
+}
+
+.book_button_catalog
+{
+	width: 7vw;
+    height: 3vw;
+    background: transparent;
+    color: #0e345a;
+    border-color: #0e345a;
+    border-radius: 2px;
+    margin-top: 2vw;
 }

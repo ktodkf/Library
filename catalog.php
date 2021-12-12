@@ -12,31 +12,18 @@
 
     </head>
     <body>
-        <div id="navigation" name="navigation">
+        <div id="navigation_catalog" name="navigation">
            <div class="logo">
                 <a href="index.php"><img src="images/book_cherv.png" class="logo_img"></a>
            </div>
             <div style="display: flex;">
                 <li class="list"><a href="about_us.php" class="about_us"> О нас</a> </li>
-                <li class="list"><a href="#contact" class="contact"> Контакты</a> </li>
+                <li class="list"><a href="contact.php" class="contact"> Контакты</a> </li>
                 <button class="list_button"><a href="signup.php" class="entry_link" >Регистрация</a></button>
             </div> 
         </div>
         <h1 class="our_book">Наши книги</h1>
-        <div class="book_story">
-            <?php
-                $link = mysqli_connect("localhost", "root", "", "library");
-                $images = mysqli_query($link, "SELECT * FROM `books`");
-            ?>
-            <?php 
-                while ($result = mysqli_fetch_assoc($images))
-                {
-                    ?>
-                        <div class="block_book"><img class="book_one" src="books_image/<?php echo $result['image']; ?>.jpg"><br>
-                        <p class="book_title"><?php echo $result['title']; ?></p></div>
-                    <?php
-                }
-            ?>
+        <div class="catalog_book">
             <div class="filter">
                 <span>Фильтры</span>  <br>
                 <select class="filter_book">
@@ -54,24 +41,25 @@
                 </div>
                 <button class="apply"> Применить </button>
             </div>
-            <div class="catalog">
-                <ul class="list_book">
-                    <li class="book_two"> </li> 
-                    <li class="book_two"> </li> 
-                    <li class="book_two"> </li>    
-                    <li class="book_two"> </li> 
-                    <li class="book_two"> </li> 
-                    <li class="book_two"> </li> 
-                    <li class="book_two"> </li> 
-                    <li class="book_two"> </li> 
-                    <li class="book_two"> </li> 
-                    <li class="book_two"> </li> 
-                    <li class="book_two"> </li> 
-                    <li class="book_two"> </li> 
-                </ul>    
+            <div class="book_story">
+                <?php
+                    $link = mysqli_connect("localhost", "root", "", "library");
+                    $images = mysqli_query($link, "SELECT * FROM `books`");
+                ?>
+                <?php 
+                    while ($result = mysqli_fetch_assoc($images))
+                    {
+                        ?>
+                            <div class="block_book_catalog"><img class="book_catalog" src="books_image/<?php echo $result['image']; ?>.jpg"><br><button class="book_button_catalog">Купить</button>
+                            <p class="book_title_catalog"><?php echo $result['title']; ?></p></div>
+
+                        
+                        <?php
+                    }
+                ?> 
             </div>
         </div>
-    <footer>
+    <footer >
         <div class="footer">
             <div >
                 <p class="list_footer_name">Издательство "Книжный червь"</p>

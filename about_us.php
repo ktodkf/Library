@@ -12,7 +12,7 @@
 
     </head>
     <body>
-        <div id="navigation" name="navigation">
+        <div id="navigation_us" name="navigation">
            <div class="logo">
                 <a href="index.php"><img src="images/book_cherv.png" class="logo_img"></a>
            </div>

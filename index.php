@@ -38,7 +38,7 @@
                     while ($result = mysqli_fetch_assoc($images))
                     {
                         ?>
-                        <div class="block_book"><img class="book_one" src="books_image/<?php echo $result['image']; ?>.jpg"><br>
+                        <div class="block_book"><img class="book_one" src="books_image/<?php echo $result['image']; ?>.jpg"><br><button class="book_button">Купить</button>
                         <p class="book_title"><?php echo $result['title']; ?></p></div>
                         <?php
                     }
@@ -58,7 +58,7 @@
                     while ($result = mysqli_fetch_assoc($images))
                     {
                         ?>
-                        <div class="block_book"><img class="book_one" src="books_image/<?php echo $result['image']; ?>.jpg"><br>
+                        <div class="block_book"><img class="book_one" src="books_image/<?php echo $result['image']; ?>.jpg"><br><button class="book_button">Купить</button>
                         <p class="book_title"><?php echo $result['title']; ?></p></div>
                         <?php
                     }
