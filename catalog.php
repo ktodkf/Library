@@ -50,7 +50,9 @@
                     while ($result = mysqli_fetch_assoc($images))
                     {
                         ?>
-                            <div class="block_book_catalog"><img class="book_catalog" src="books_image/<?php echo $result['image']; ?>.jpg"><br><button class="book_button_catalog">Купить</button>
+                            <div class="block_book_catalog"><img class="book_catalog" src="books_image/<?php echo $result['image']; ?>.jpg"><br>
+                                <p class="price_catalog"></p>
+                                <button class="book_button_catalog">Купить</button>
                             <p class="book_title_catalog"><?php echo $result['title']; ?></p></div>
 
                         
@@ -59,33 +61,33 @@
                 ?> 
             </div>
         </div>
-    <footer >
-        <div class="footer">
+    <footer class="footer_catalog">
+        <div class="footer_catalog_div">
             <div >
-                <p class="list_footer_name">Издательство "Книжный червь"</p>
+                <p class="list_footer_name_catalog">Издательство "Книжный червь"</p>
                 <div>
-                    <li class="list_footer">Адрес: Республика Марий Эл,</li>
-                    <li class="list_footer">город Йошкар-Ола</li>
-                    <li class="list_footer">test@my.com</li>
-                    <li class="list_footer">12345678910</li>
+                    <li class="list_footer_catalog">Адрес: Республика Марий Эл,</li>
+                    <li class="list_footer_catalog">город Йошкар-Ола</li>
+                    <li class="list_footer_catalog">test@my.com</li>
+                    <li class="list_footer_catalog">12345678910</li>
                 </div>
             </div>
             <div>
-                <p class="list_footer_name">Магазин</p>
+                <p class="list_footer_name_catalog">Магазин</p>
                 <div>
-                    <li class="list_footer">Часто задаваемые вопросы</li>
-                    <li class="list_footer">Обмен и возврат</li>
-                    <li class="list_footer">Способы оплаты</li>
-                    <li class="list_footer">Доставка</li>
+                    <li class="list_footer_catalog">Часто задаваемые вопросы</li>
+                    <li class="list_footer_catalog">Обмен и возврат</li>
+                    <li class="list_footer_catalog">Способы оплаты</li>
+                    <li class="list_footer_catalog">Доставка</li>
                 </div>
             </div>
             <div>
-                <p class="list_footer_name">Социальные сети</p>
+                <p class="list_footer_name_catalog">Социальные сети</p>
                 <div>
-                    <li class="list_footer">Facebook</li>
-                    <li class="list_footer">Twitter</li>
-                    <li class="list_footer">Instagram</li>
-                    <li class="list_footer">Pinterest</li>
+                    <li class="list_footer_catalog">Facebook</li>
+                    <li class="list_footer_catalog">Twitter</li>
+                    <li class="list_footer_catalog">Instagram</li>
+                    <li class="list_footer_catalog">Pinterest</li>
                 </div>
             </div>
         </div>
