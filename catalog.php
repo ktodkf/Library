@@ -51,9 +51,9 @@
                     {
                         ?>
                             <div class="block_book_catalog"><img class="book_catalog" src="books_image/<?php echo $result['image']; ?>.jpg"><br>
-                                <p class="price_catalog"></p>
+                                <p class="price_catalog"> <?php echo $result['cost']; ?> руб. </p>
                                 <button class="book_button_catalog">Купить</button>
-                            <p class="book_title_catalog"><?php echo $result['title']; ?></p></div>
+                            <p class="book_title_catalog"> <?php echo $result['title']; ?></p> </div>
 
                         
                         <?php
