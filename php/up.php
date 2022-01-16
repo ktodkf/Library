@@ -18,7 +18,6 @@
 
 	$pass= md5($pass."ghjkl12dsgfhd34");
 
-
 	$mysql = new mysqli('localhost', 'root', '', 'library');
 	$mysql->query("INSERT INTO `users` (`email`, `login`, `pass`) VALUES('$email', '$login', '$pass')");
 

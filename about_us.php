@@ -8,7 +8,8 @@
         <link rel="stylesheet" type="text/css" href="style/style.css">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i&display=swap&subset=cyrillic-ext" rel="stylesheet">
         <script src="js/index.js"></script>
-        <script src="js/script.js"></script>   
+        <script src="js/script.js"></script>
+        <script src="js/map.js"></script>   
 
     </head>
     <body>
@@ -27,6 +28,8 @@
         <div class="background_grey"></div>
         <div><img class="girl_img" src="images/girl_read.jpg"></div>
         <img src="images/book.jpg" class="book_img">
+
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d70216.85558646268!2d47.82970024201349!3d56.63510779763531!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x415994cee334e033%3A0xdaebce5764135883!2z0JnQvtGI0LrQsNGALdCe0LvQsCwg0KDQtdGB0L8uINCc0LDRgNC40Lkg0K3Quw!5e0!3m2!1sru!2sru!4v1641754933964!5m2!1sru!2sru" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         <footer>
         <div class="footer">
             <div >
@@ -57,6 +60,6 @@
                 </div>
             </div>
         </div>
-    </footer>    
+    </footer>
     </body>
 </html>
