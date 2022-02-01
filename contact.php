@@ -19,6 +19,7 @@
             <div style="display: flex;">
                 <li class="list"><a href="catalog.php" class="shop"> Магазин</a></li>
                 <li class="list"><a href="about_us.php" class="about_us"> О нас</a> </li>
+                 <li class="list"><a href="shopping_cart.html" class="cart"> Корзина</a> </li>
                 <button class="list_button"><a href="signup.php" class="entry_link" >Регистрация</a></button>
             </div> 
         </div>

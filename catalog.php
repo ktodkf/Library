@@ -9,7 +9,6 @@
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i&display=swap&subset=cyrillic-ext" rel="stylesheet">
         <script src="js/index.js"></script>
         <script src="js/script.js"></script>   
-
     </head>
     <body>
         <div id="navigation_catalog" name="navigation">
@@ -19,6 +18,7 @@
             <div style="display: flex;">
                 <li class="list"><a href="about_us.php" class="about_us"> О нас</a> </li>
                 <li class="list"><a href="contact.php" class="contact"> Контакты</a> </li>
+                <li class="list"><a href="shopping_cart.html" class="cart"> Корзина</a> </li> 
                 <button class="list_button"><a href="signup.php" class="entry_link" >Регистрация</a></button>
             </div> 
         </div>
@@ -52,7 +52,7 @@
                         ?>
                             <div class="block_book_catalog"><img class="book_catalog" src="books_image/<?php echo $result['image']; ?>.jpg"><br>
                                 <p class="price_catalog"> <?php echo $result['cost']; ?> руб. </p>
-                                <button class="book_button_catalog">Купить</button>
+                                <button class="book_button_catalog" >Купить</button>
                             <p class="book_title_catalog"> <?php echo $result['title']; ?></p> </div>
 
                         
